@@ -10,8 +10,8 @@
 #								#
 #################################################################
 
-uSer=buadmin
-pAssword=Passw0rd
+uSer=SomeUser
+pAssword=SomePassword
 iPaddress=$(ifconfig eth0 | awk '{print $2}' | egrep -o '([0-9]+\.){3}[0-9]+')
 
 #add user $uSer
