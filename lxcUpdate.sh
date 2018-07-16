@@ -20,7 +20,7 @@ for container in $(lxc list volatile.last_state.power=RUNNING -c n | awk 'NR>2 {
     echo "-----------------------------";
 
     lxc exec ${container} apt update
-    lxc exec ${container} apt upgrade -y
-    lxc exec ${container} apt autoremove -y
+    lxc exec ${container} apt upgrade
+    lxc exec ${container} apt autoremove
 
 done
